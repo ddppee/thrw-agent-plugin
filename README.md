@@ -34,7 +34,7 @@ After setup or an update, save your work and start a fresh session. For a deskto
 - Preserve existing descriptions and unrelated subtasks. Reuse saved stages on resumption; pending design approval or failed required verification is not completion.
 - Report actual saved outcomes, including failures or declined writes.
 
-The filled square identifies a stage; its checkbox indicates completion. Stage tracking alone does not complete the parent todo. The [skill source](skills/thrw-plan-and-organize/SKILL.md) describes the full behavior. Implicit skill selection varies by host; explicit invocation is available in supported clients.
+The filled square identifies a stage; its checkbox indicates completion. After verification, the skill reviews the parent's full requirements and current children. When all work is verified complete and no child remains open, it completes the parent without an extra status request, subject to user instructions and host approval. Checked stages alone are not sufficient. The [skill source](skills/thrw-plan-and-organize/SKILL.md) describes the full behavior. Implicit skill selection varies by host; explicit invocation is available in supported clients.
 
 ## Connection and data
 

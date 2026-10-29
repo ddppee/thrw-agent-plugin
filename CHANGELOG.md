@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.2
+
+- Review parent completion after verification and on resumption; complete fully verified todos without an extra status request, while preserving pending work and explicit instructions to leave them open.
+- Retain square prefixes when creating progress-stage subtasks whenever possible to improve readability and stage recognition.
+
 ## 1.0.1
 
 - Explicitly recommend a fresh session or desktop app restart after installation and updates, while preserving active work and respecting supported reloads.
