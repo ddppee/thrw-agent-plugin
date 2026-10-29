@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "thrw": {
+      "type": "streamable-http",
+      "url": "https://api.thrw.cc/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "dcr"
+            },
+            "resource": "https://api.thrw.cc/mcp",
+            "baseScopes": [
+              "openid",
+              "email",
+              "thrw:read",
+              "thrw:write"
+            ],
+            "defaultScopes": [
+              "openid",
+              "email",
+              "thrw:read",
+              "thrw:write"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

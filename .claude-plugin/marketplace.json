@@ -1,0 +1,17 @@
+{
+  "name": "thrw-tools",
+  "owner": {
+    "name": "DDPPEE",
+    "email": "ddppee@ddppee.com"
+  },
+  "metadata": {
+    "description": "THRW MCP integration and planning skill for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "thrw",
+      "source": "./plugins/claude-code",
+      "description": "Explore planning context, organize confirmed todos, and track work progress with THRW."
+    }
+  ]
+}

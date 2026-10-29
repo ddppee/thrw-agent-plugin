@@ -1,0 +1,13 @@
+interface:
+  display_name: "THRW: Plan and Organize"
+  short_description: "Organize confirmed todos, plans, and schedules with THRW."
+policy:
+  allow_implicit_invocation: true
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "thrw"
+      description: "THRW planning MCP server"
+      transport: "streamable_http"
+      url: "https://api.thrw.cc/mcp"

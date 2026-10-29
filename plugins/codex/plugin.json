@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "thrw",
+  "version": "1.0.0",
+  "description": "Explore planning context, organize confirmed todos, and track work progress with THRW.",
+  "author": {
+    "name": "DDPPEE",
+    "email": "ddppee@ddppee.com"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "THRW",
+        "shortDescription": "Plan and organize with THRW",
+        "longDescription": "Explore existing todos and organize confirmed plans and schedules with THRW. Reuse existing groups, lists, and matching todos. Track actual work with design, implementation, and verification subtasks while preserving existing content. Tentative ideas and unaccepted suggestions are not saved. Execution approval depends on the client and connection path.",
+        "developerName": "DDPPEE",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "defaultPrompt": [
+          "Show my upcoming todos and schedules.",
+          "Organize the actions we agreed on into my existing lists.",
+          "Move my equipment check to tomorrow from 2 PM to 2:30 PM."
+        ],
+        "websiteURL": "https://thrw.cc",
+        "privacyPolicyURL": "https://thrw.cc/privacy",
+        "termsOfServiceURL": "https://thrw.cc/terms",
+        "logo": "./assets/thrw-mark-light.png",
+        "composerIcon": "./assets/thrw-mark-light.png",
+        "logoDark": "./assets/thrw-mark-dark.png",
+        "composerIconDark": "./assets/thrw-mark-dark.png",
+        "supportURL": "https://thrw.cc/support"
+      }
+    }
+  },
+  "homepage": "https://thrw.cc",
+  "repository": "https://github.com/ddppee/thrw-agent-plugin",
+  "license": "MIT"
+}

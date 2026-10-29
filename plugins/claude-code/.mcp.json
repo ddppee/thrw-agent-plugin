@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "thrw": {
+      "type": "http",
+      "url": "https://api.thrw.cc/mcp",
+      "oauth": {
+        "scopes": "openid email thrw:read thrw:write"
+      }
+    }
+  }
+}

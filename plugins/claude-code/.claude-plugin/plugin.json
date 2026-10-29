@@ -1,0 +1,19 @@
+{
+  "name": "thrw",
+  "displayName": "THRW",
+  "version": "1.0.0",
+  "description": "Explore planning context, organize confirmed todos, and track work progress with THRW.",
+  "author": {
+    "name": "DDPPEE",
+    "email": "ddppee@ddppee.com"
+  },
+  "homepage": "https://thrw.cc",
+  "keywords": [
+    "planning",
+    "todos",
+    "scheduling",
+    "productivity"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/ddppee/thrw-agent-plugin"
+}

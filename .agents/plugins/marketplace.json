@@ -1,0 +1,20 @@
+{
+  "name": "thrw-tools",
+  "interface": {
+    "displayName": "THRW Tools"
+  },
+  "plugins": [
+    {
+      "name": "thrw",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
