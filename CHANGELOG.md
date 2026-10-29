@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.0
+
+- Define THRW commands as delegated contextual planning and supported create, update, move, complete, reopen, or delete operations, rather than new-todo capture alone.
+- Recognize case-insensitive English command forms and contextual phonetic spellings across the five supported languages, including native-script and voice-transcribed variants.
+- Act on clear planning intent without a redundant save request while preserving no-save instructions, existing content, duplicate prevention, and host approval boundaries.
+- Reuse existing planning structure before creating containers, preserve context across todos/descriptions/children, and audit each affected todo's saved description, schedule start/end, deadline, importance, and placement.
+- Consolidate repeated instructions while retaining field audits, stage criteria, parent-completion gates, and write boundaries.
+
 ## 1.0.2
 
 - Review parent completion after verification and on resumption; complete fully verified todos without an extra status request, while preserving pending work and explicit instructions to leave them open.

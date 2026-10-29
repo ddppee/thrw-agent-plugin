@@ -24,7 +24,9 @@ After setup or an update, save your work and start a fresh session. For a deskto
 
 ## What the skill does
 
+- Treat THRW/throw commands and contextual localized pronunciation variants as requests to organize supplied context and apply supported planning changes, not only create new todos. English command forms are case-insensitive.
 - Search existing work and reuse matching todos, groups, and lists.
+- Structure rough input without forcing every hierarchy level; preserve relevant context in descriptions and children. Audit each affected todo's saved fields, including schedule, deadline, and importance.
 - Save confirmed actions and explicitly requested changes. Do not save tentative ideas or unaccepted suggestions.
 - Recognize existing todos that clearly match the work, even without a THRW mention.
 - For substantive work, append missing progress stages and check them when finished:
