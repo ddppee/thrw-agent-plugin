@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+- Explicitly recommend a fresh session or desktop app restart after installation and updates, while preserving active work and respecting supported reloads.
+- Ask users to verify THRW tool and skill availability after reopening; keep unperformed checks pending.
+
 ## 1.0.0
 
 - Restart the GitHub distribution with a common package version for Codex and Claude Code.

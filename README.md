@@ -20,6 +20,8 @@ of registering another one. Verify the connection and skill separately.
 
 The agent follows the [installation procedure](INSTALL.md). Authentication can require browser interaction. Installation, OAuth access, and approval of individual writes are separate steps. This GitHub distribution is not an official directory listing.
 
+After setup or an update, save your work and start a fresh session. For a desktop app, fully quit and reopen it; for a CLI, exit and start a new session. This is recommended to load the new setup, although a supported reload may be enough. Then check that THRW tools and the planning skill are available.
+
 ## What the skill does
 
 - Search existing work and reuse matching todos, groups, and lists.

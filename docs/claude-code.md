@@ -19,6 +19,8 @@ The package pins `openid email thrw:read thrw:write` using Claude Code's `oauth.
 
 ## Verify and use
 
+After installation or an update, save your work and start a fresh Claude Code session; if using the desktop app, fully quit and reopen it. This is recommended to load the new setup, although a supported reload may be sufficient. Do not end the user's session automatically. Confirm the plugin, MCP connection, and skill in the fresh session; keep checks pending when they cannot yet be performed.
+
 ```sh
 claude plugin list
 claude plugin details thrw

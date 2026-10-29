@@ -44,4 +44,6 @@ Do not create, change, or complete actual todos just to verify installation. Beh
 
 Report the client, user scope, installation path, source/ref or package version, and separate MCP/authentication/skill results. Distinguish complete, failed, and pending steps. Never infer automatic skill selection from file installation, or completion of authentication from an opened browser page.
 
+After installing or updating MCP settings, a plugin, or the standalone skill, explicitly recommend saving current work and starting a fresh session so the client can load the new setup. For a desktop app, recommend fully quitting and reopening it; for a CLI, recommend exiting the current session and starting a new one. A supported reload may be sufficient, and a restart is a recommendation rather than a universal requirement. Do not close the app or end the user's session automatically. Ask the user to confirm THRW tools and the skill are available in the new session, and keep any checks that could not yet be performed marked as pending.
+
 If an operation fails or is declined, preserve the existing setup, explain the incomplete step, and stop that operation. Do not blindly retry or bypass an approval. Follow the client's normal refresh and update procedures; never disable security settings as a troubleshooting shortcut.

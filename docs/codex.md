@@ -37,7 +37,9 @@ The package retains OpenAI's documented per-server `extensions.com.openai` OAuth
 
 ## Verify and use
 
-Check connection authentication, tool discovery, and skill discovery separately. Invoke the skill through the client's skill picker or `$thrw-plan-and-organize` where supported. A new turn or restart may be needed. Skill selection without an explicit mention depends on the host.
+After installation or an update, save your work and start a fresh Codex session; in the desktop app, fully quit and reopen the app. This is recommended to load updated MCP settings and skills; use a supported reload instead if it refreshes both. Do not close an active session automatically, and keep any discovery checks pending until they can be performed.
+
+Check connection authentication, tool discovery, and skill discovery separately in the fresh session. Invoke the skill through the client's skill picker or `$thrw-plan-and-organize` where supported. Skill selection without an explicit mention depends on the host.
 
 The recommended complete scope set is `openid email thrw:read thrw:write`. These are not all mandatory: supported subsets limit capabilities; `email` requires `openid`. A denied write needs the permission named in its error, not weaker execution approval settings. OAuth access and approval of individual writes are independent.
 
