@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2.0
+
+- Add independent task kinds: default `todo_item` and reference-only `document`, kind-aware AI reads and progress tracking, and Markdown description guidance. Existing tools and IDs are retained. Updating this package does not update installed skills or refresh MCP tool definitions.
+
+- Add guidance for complete list inventories with `list_tasks({ taskGroupId, page: 0 })`, following `nextPage` until null. Existing `open` and `recents` presets remain available.
+- Pages contain up to 50 active root todos, including completed ones, with `totalCount`, dates, importance, and direct-child counts. Titles may be shortened to 128 Unicode codepoints with `…`; read full titles, descriptions, and children with `read_content`.
+- Distinguish refreshing MCP tool definitions from updating installed plugin skills. A source version bump does not refresh every host cache or establish deployment/publication.
+- Publish both client packages as 1.2.0. MCP implementation version, protocol negotiation and server deployment tags remain independent.
+
 ## 1.1.0
 
 - Define THRW commands as delegated contextual planning and supported create, update, move, complete, reopen, or delete operations, rather than new-todo capture alone.

@@ -38,6 +38,8 @@ Do not ask the user to paste tokens or secrets into chat or this repository. If 
 3. Confirm the skill is discovered and its installed content matches the selected source. If refresh, a new turn, or restart is required, say exactly what remains to be checked.
 4. Confirm no duplicate active THRW connection or duplicate skill was introduced.
 
+For 1.2.0 pagination, check refreshed `list_tasks` definitions for `taskGroupId` and `page` and inspect initialization `serverInfo.version` when the client exposes it. An installed 1.2.0 package does not prove the hosted MCP server was upgraded. Existing preset calls remain supported; use the client's MCP refresh/reconnect flow to learn page mode. Updating installed skill files is separate from reconnecting MCP. See [complete list inventories](docs/generic-mcp.md#complete-list-inventories).
+
 Do not create, change, or complete actual todos just to verify installation. Behavioral checks involving writes need a separate test request and disposable data.
 
 ## 5. Report the actual result

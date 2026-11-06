@@ -36,7 +36,7 @@ After setup or an update, save your work and start a fresh session. For a deskto
 - Preserve existing descriptions and unrelated subtasks. Reuse saved stages on resumption; pending design approval or failed required verification is not completion.
 - Report actual saved outcomes, including failures or declined writes.
 
-The filled square identifies a stage; its checkbox indicates completion. After verification, the skill reviews the parent's full requirements and current children. When all work is verified complete and no child remains open, it completes the parent without an extra status request, subject to user instructions and host approval. Checked stages alone are not sufficient. The [skill source](skills/thrw-plan-and-organize/SKILL.md) describes the full behavior. Implicit skill selection varies by host; explicit invocation is available in supported clients.
+The filled square identifies a stage; its checkbox indicates completion. After verification, the skill reviews the parent's full requirements and current children. When all work is verified complete and no todo child remains open (documents are reference context), it completes the parent without an extra status request, subject to user instructions and host approval. Checked stages alone are not sufficient. The [skill source](skills/thrw-plan-and-organize/SKILL.md) describes the full behavior. Implicit skill selection varies by host; explicit invocation is available in supported clients.
 
 ## Connection and data
 
@@ -49,6 +49,8 @@ Use your own THRW account. No service credentials, access tokens, client secrets
 
 The package version is in [VERSION](VERSION). MCP server releases and installed skill updates are separate. See [CHANGELOG.md](CHANGELOG.md).
 
+Version 1.2.0 adds complete list inventories: discover list IDs with `list_task_group_hierarchy`, then call `list_tasks` with `taskGroupId` and `page: 0`, without `preset`, and follow `nextPage` until null. Pages include completed root todos; descriptions and child contents remain available through `read_content`. Existing `open` and `recents` presets are preserved. See [pagination and tool refresh](docs/generic-mcp.md#complete-list-inventories) for response details and client update boundaries. Updating this public package does not refresh MCP tool definitions or installed skills in existing clients.
+
 ## Support and license
 
 [THRW](https://thrw.cc) · [Support](https://thrw.cc/support) · [Privacy](https://thrw.cc/privacy) · [Terms](https://thrw.cc/terms)
@@ -56,3 +58,7 @@ The package version is in [VERSION](VERSION). MCP server releases and installed 
 Publisher: DDPPEE. Public support contact: ddppee@ddppee.com.
 
 This distribution is [MIT licensed](LICENSE). The license covers the distributed package, not the THRW server or entitlement to the hosted service.
+
+## Task kinds
+
+Version 1.2.0 documents `todo_item` (the default) and `document` for reference material without progress tracking through the existing task tools. Kind-only changes preserve stored completion. AI reads include kind and omit document completion fields; descriptions support Markdown. See [the MCP contract notes](docs/generic-mcp.md#task-kinds). The task-kind server changes are included in server-v1.4.0. Refreshing MCP tool metadata and updating an installed plugin/skill are separate actions; verify both in your client.
